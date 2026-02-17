@@ -1,0 +1,14 @@
+#include <iostream>
+
+double calculateAverage(int grades[]) {
+    return (grades[0] + grades[1] + grades[2] + grades[3]) / 4.0;
+}
+
+int main() {
+    int grades[4] = {80, 90, 75, 95};
+    int grades2[4]={70, 80, 75, 76};
+    double average = calculateAverage(grades2);
+    std::cout << "Average grade: " << average << std::endl;
+
+    return 0;
+}
